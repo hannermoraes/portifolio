@@ -78,6 +78,8 @@ img {
   --z-fixed: 100;
 }
 
+/* ============== Media Queries ============== */
+
 @media screen and (max-width:767px) {
   .nav__menu {
     display: flex;

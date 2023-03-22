@@ -33,6 +33,10 @@ const sr = ScrollReveal({
   reset: true
 })
 
+// all
+
+sr.reveal('.section-title', { delay: 300 })
+
 
 // scroll home
 sr.reveal('.home__social-icon', { delay: 300, interval: 370 })
@@ -45,12 +49,12 @@ sr.reveal('.about, .section__title', { delay: 200 })
 
 
 // scroll works
-sr.reveal('.work__img', { delay: 200, interval: 200 })
+sr.reveal('.work__img', { delay: 200 })
 sr.reveal('.work__button', { delay: 300 })
 
 // scroll contact
-sr.reveal('.contact__input', { interval: 100 })
-sr.reveal('.contact__button', { interval: 100 })
+sr.reveal('.contact__input', { delay: 300, interval: 200 })
+sr.reveal('.contact__button', { delay: 300 })
 
 
 const ls = ScrollReveal({
@@ -66,9 +70,9 @@ ls.reveal('.home__button', { delay: 300 })
 
 // scroll qualification
 
-ls.reveal('#qualification1', { interval: 700 })
-ls.reveal('#qualification2', { interval: 500 })
-ls.reveal('#qualification3', { interval: 300 })
+ls.reveal('#qualification1', { delay: 600, interval: 300 })
+ls.reveal('#qualification2', { delay: 500, interval: 300 })
+ls.reveal('#qualification3', { delay: 400, interval: 300 })
 
 
 

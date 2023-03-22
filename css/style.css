@@ -58,7 +58,7 @@
 }
 
 .nav__list {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -199,10 +199,9 @@ a.nav__link.active::after {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: .75rem 2.5rem;
+  padding: .85rem 3rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
-  padding-top: 18px;
 }
 
 .button:hover {
@@ -239,7 +238,7 @@ a.nav__link.active::after {
 }
 
 .about__img img {
-  width: 200px;
+  width: 280px;
   border-radius: .5rem;
 }
 
@@ -329,7 +328,6 @@ a.certification {
 /* skills */
 
 .skills__container {
-  /* row-gap: 2rem; */
   text-align: center;
   padding: 10px;
   padding-bottom: 0px;
@@ -379,19 +377,15 @@ a.certification {
 }
 
 #skills__bar-css {
-  max-width: 85%;
+  max-width: 90%;
 }
 
 #skills__bar-js {
   max-width: 80%;
 }
 
-#skills_bar-js {
-  max-width: 80%;
-}
-
 #skills__bar-sass {
-  max-width: 80%;
+  max-width: 85%;
 }
 
 #skills__bar-react {
@@ -558,8 +552,8 @@ a.certification {
 
 .contact__input {
   width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
+  font-size: .85rem;
+  font-family: 'Poppins', sans-serif;
   padding: 1rem;
   border-radius: .5rem;
   border: 2px solid #959b9f;
@@ -575,7 +569,7 @@ input.contact__input:focus {
 input.contact__input::placeholder {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: .8rem;
+  font-size: .75rem;
 }
 
 
@@ -666,7 +660,8 @@ footer {
   border-radius: 10px;
 }
 
-/* ====== media queries ========= */
+/* ====== Media Queries ========= */
+
 @media screen and (max-width: 767px) {
   .home {
     height: 20rem;
@@ -678,6 +673,7 @@ footer {
 
 #about h2.section-title {
   margin-top: 1rem;
+  margin-bottom: 6rem;
 }
 
 .section-title {
@@ -734,7 +730,7 @@ footer {
 
   .home {
     padding-top: 8rem;
-    height: 30rem;
+    height: 35rem;
     row-gap: 1rem;
   }
 
@@ -798,8 +794,7 @@ footer {
   }
 
   .about__img img {
-    width: 300px;
-    filter: brightness(1.2);
+    width: 350px;
   }
 
 
@@ -948,7 +943,7 @@ footer {
 
   .date {
     font-size: .7rem;
-    font-family: "kanit", sans-serif;
+    font-family: "Kanit", sans-serif;
   }
 
   .certification {
