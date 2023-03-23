@@ -53,7 +53,7 @@ sr.reveal('.work__img', { delay: 200 })
 sr.reveal('.work__button', { delay: 300 })
 
 // scroll contact
-sr.reveal('.contact__input', { delay: 300, interval: 200 })
+sr.reveal('.contact__input', { delay: 300 })
 sr.reveal('.contact__button', { delay: 300 })
 
 
