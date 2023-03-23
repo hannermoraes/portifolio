@@ -75,8 +75,6 @@ ls.reveal('#qualification2', { delay: 500, interval: 300 })
 ls.reveal('#qualification3', { delay: 400, interval: 300 })
 
 
-
-
 // Intersection Observer - Progress Bar
 
 const observer = new IntersectionObserver((entries) => {
