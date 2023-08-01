@@ -23,4 +23,3 @@ Fique à vontade para entrar em contato comigo através do meu email: hannermora
 - LinkedIn: hannermoraes - https://www.linkedin.com/in/hannermoraes/
 
 Obrigado por visitar meu portfólio! Estou ansioso para colaborar com você e enfrentar desafios juntos.
-

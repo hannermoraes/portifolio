@@ -548,43 +548,7 @@ a.certification {
   font-size: 1.3rem;
 }
 
-/* Contact */
-
-.contact__input {
-  width: 100%;
-  font-size: .85rem;
-  font-family: 'Poppins', sans-serif;
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 2px solid #959b9f;
-  outline: none;
-  margin-bottom: var(--mb-4);
-
-}
-
-input.contact__input:focus {
-  border: 3px solid var(--first-color);
-}
-
-input.contact__input::placeholder {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: .75rem;
-}
-
-
-#contact {
-  margin-top: 80px;
-}
-
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
-}
+/* Footer */
 
 .backhome {
   display: flex;
@@ -970,14 +934,6 @@ footer {
     height: 15rem;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
-  }
-
-  .contact__form {
-    width: 360px;
-  }
-
-  .contact__container {
-    justify-items: center;
   }
 }
 
