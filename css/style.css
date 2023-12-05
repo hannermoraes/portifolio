@@ -372,20 +372,21 @@ a.certification {
   z-index: var(--z-back);
 }
 
-#skills__bar-html {
-  max-width: 90%;
+
+#skills__bar-php {
+  max-width: 80%;
 }
 
-#skills__bar-css {
+#skills__bar-sql {
+  max-width: 85%;
+}
+
+#skills__bar-bootstrap {
   max-width: 90%;
 }
 
 #skills__bar-js {
   max-width: 80%;
-}
-
-#skills__bar-sass {
-  max-width: 85%;
 }
 
 #skills__bar-react {
@@ -395,10 +396,10 @@ a.certification {
 #skills__bar-typescript {
   max-width: 75%;
 }
-
-#skills__bar-bootstrap {
-  max-width: 80%;
+#skills__bar-angular {
+  max-width: 75%;
 }
+
 
 .hidden {
   opacity: 0;
