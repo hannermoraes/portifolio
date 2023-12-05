@@ -1,360 +1,474 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+      integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- global css -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- js -->
+    <script defer src="./js/script.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Hanner Moraes - Portifólio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
-    integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- global css -->
-  <link rel="stylesheet" href="./css/global.css">
-  <!-- css -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- scrollreveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- js -->
-  <script defer src="./js/script.js"></script>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-  <title>Hanner Moraes - Portifólio</title>
-</head>
-
-<body>
-  <!-- header -->
-  <header class="l-header">
-    <nav class="nav bd-grid">
-      <div class="nav__title">
-        <img src="./assets/logo.png" alt="minhalogo" id="logo">Portifólio
-      </div>
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-
-          <li class="nav__item"><a href="#home" class="nav__link  ">Home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-          <li class="nav__item"><a href="#education" class="nav__link">Qualificações</a></li>
-          <li class="nav__item"><a href="#works" class="nav__link">Trabalhos</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
-
-        </ul>
-      </div>
-      <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu'></i>
-      </div>
-    </nav>
-  </header>
-
-  <main class="l-main">
-
-    <!-- home -->
-    <section class="home bd-grid" id="home">
-      <div class="home__data">
-        <h1 class="home__title">Olá, eu sou <span class="home__title-color">Hanner</span> <br>
-          <span class="home__title-subtitle">
-            Desenvolvedor &nbsp;Front-end.
-
-          </span>
-        </h1>
-        <div class="home__social">
-          <a href="./assets/Currículo - Hanner Moraes - 2023.pdf" class="home__button button" download="">Download
-            CV</a>
-
-          <a href="https://www.linkedin.com/in/hannermoraes/" class="home__social-icon" target="_blank">
-            <i class='bx bxl-linkedin'></i></a>
-
-          <a href="mailto:hannermoraes@gmail.com" class="home__social-icon" target="_blank">
-            <i class='bx bxl-gmail'></i></a>
-
-          <a href="https://github.com/hannermoraes" class="home__social-icon" target="_blank">
-            <i class='bx bxl-github'></i></a>
+  <body>
+    <!-- header -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div class="nav__title">
+          <img src="./assets/logo.png" alt="minhalogo" id="logo" />Portifólio
         </div>
-      </div>
-    </section>
-
-    <!-- about -->
-    <section class="about section" id="about">
-      <h2 class="section-title">Sobre</h2>
-
-      <div class="about__container bd-grid">
-        <div class="about__img">
-          <img src="./assets/boneco.svg" alt="Ilustrativa">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Sobre</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Habilidades</a>
+            </li>
+            <li class="nav__item">
+              <a href="#works" class="nav__link">Projetos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">Qualificações</a>
+            </li>
+          </ul>
         </div>
-
-        <div>
-          <h2 class="about__subtitle">Hanner Moraes</h2>
-          <p class="about__text">&nbsp;&nbsp;Olá, meu nome é Hanner Moraes e sou desenvolvedor frontend
-            recém-formado pela XP Educação. Durante o meu bootcamp tive a oportunidade de aprimorar minhas
-            habilidades em linguagens de programação essenciais, como HTML, CSS e JavaScript. Além disso, também
-            aprofundei meu conhecimento em bibliotecas e frameworks modernos, como React e Angular.
-            Atualmente, estou buscando uma oportunidade para aplicar minhas habilidades como desenvolvedor frontend. Meu
-            objetivo é trabalhar em um ambiente desafiador que me permita crescer profissionalmente e contribuir com o
-            desenvolvimento dos projetos que participar.
-            <br><br>
-            <span class="about__info">Obrigado por visitar meu portfólio.</span>
-          </p>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
         </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <!-- skills -->
-    <section class="skills section" id="skills">
-      <h2 class="section-title">Habilidades</h2>
+    <main class="l-main">
+      <!-- home -->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Olá, eu sou <span class="home__title-color">Hanner</span> <br />
+            <span class="home__title-subtitle">
+              Desenvolvedor &nbsp;FullStack.
+            </span>
+          </h1>
+          <div class="home__social">
+            <a
+              href="./assets/Currículo - Hanner Moraes.pdf"
+              class="home__button button"
+              download=""
+              >Download CV</a
+            >
 
-      <div class="skills__container bd-grid">
-        <!-- HTML5 -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-html5 skills__icon'></i>
-            <span class="skills__name">HTML5</span>
+            <a
+              href="https://www.linkedin.com/in/hannermoraes/"
+              class="home__social-icon"
+              target="_blank"
+            >
+              <i class="bx bxl-linkedin"></i
+            ></a>
+
+            <a
+              href="mailto:hannermoraes@gmail.com"
+              class="home__social-icon"
+              target="_blank"
+            >
+              <i class="bx bxl-gmail"></i
+            ></a>
+
+            <a
+              href="https://github.com/hannermoraes"
+              class="home__social-icon"
+              target="_blank"
+            >
+              <i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <h2 class="section-title">Sobre</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="./assets/boneco.svg" alt="Ilustrativa" />
           </div>
 
           <div>
-            <span class="skills__percentage">90%</span>
-          </div>
-
-          <div id="skills__bar-html" class="skills__bar hidden"></div>
-        </div>
-        <!-- CSS -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-css3 skills__icon'></i>
-            <span class="skills__name">CSS3</span>
-          </div>
-
-          <div>
-            <span class="skills__percentage">90%</span>
-          </div>
-
-          <div id="skills__bar-css" class="skills__bar hidden"></div>
-        </div>
-        <!-- SASS -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-sass skills__icon'></i>
-            <span class="skills__name">SASS</span>
-          </div>
-
-          <div>
-            <span class="skills__percentage">85%</span>
-          </div>
-
-          <div id="skills__bar-sass" class="skills__bar hidden"></div>
-        </div>
-        <!-- BOOTSTRAP -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-bootstrap skills__icon'></i>
-            <span class="skills__name">BOOTSTRAP</span>
-          </div>
-
-          <div>
-            <span class="skills__percentage">80%</span>
-          </div>
-
-          <div id="skills__bar-bootstrap" class="skills__bar hidden"></div>
-        </div>
-        <!-- JAVASCRIPT -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-javascript skills__icon'></i>
-            <span class="skills__name">JAVASCRIPT</span>
-          </div>
-
-          <div>
-            <span class="skills__percentage">80%</span>
-          </div>
-
-          <div id="skills__bar-js" class="skills__bar hidden"></div>
-        </div>
-        <!-- REACT -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-react skills__icon'></i>
-            <span class="skills__name">REACT</span>
-          </div>
-
-          <div>
-            <span class="skills__percentage">75%</span>
-          </div>
-
-          <div id="skills__bar-react" class="skills__bar hidden"></div>
-        </div>
-        <!-- TYPESCRIPT -->
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-typescript skills__icon'></i>
-            <span class="skills__name">TYPESCRIPT</span>
-          </div>
-
-          <div>
-            <span class="skills__percentage">75%</span>
-          </div>
-
-          <div id="skills__bar-typescript" class="skills__bar hidden"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- work -->
-    <section class="work section" id="works">
-      <h2 class="section-title">Trabalhos</h2>
-
-      <div class="work__container bd-grid">
-
-        <div class="work__img">
-          <img src="./assets/clima.png" alt="app de clima" class="imagem_fundo">
-          <div class="work__card-description">
-            <h3 class="work__card-title">climaMundo</h3>
-            <nav class="work__card-nav">
-              <a href="https://github.com/hannermoraes/climaMundo" target="_blank" label="Github">
-                <button class="button-git">github</button>
-              </a>
-              <a href="https://hannermoraes.github.io/climaMundo/" target="_blank" label="Site">
-                <button class="button-page">site</button>
-              </a>
-            </nav>
-          </div>
-        </div>
-
-        <div class="work__img">
-          <img src="./assets/todo.png" alt="" class="imagem_fundo">
-          <div class="work__card-description">
-            <h3 class="work__card-title">toDo List</h3>
-            <nav class="work__card-nav">
-              <a href="https://github.com/hannermoraes/toDo" target="_blank" label="Github">
-                <button class="button-git">github</button>
-              </a>
-              <a href="https://hannermoraes.github.io/toDo/" target="_blank" label="Site">
-                <button class="button-page">site</button>
-              </a>
-            </nav>
-          </div>
-        </div>
-        <div class="work__img">
-          <img src="./assets/ammarhes.png" alt="" class="imagem_fundo">
-          <div class="work__card-description">
-            <h3 class="work__card-title">login/cadastro</h3>
-            <nav class="work__card-nav">
-              <a href="https://github.com/hannermoraes/desafio-ammarhes-final" target="_blank" label="Github">
-                <button class="button-git">github</button>
-              </a>
-              <a href="https://hannermoraes.github.io/desafio-ammarhes-final/" target="_blank" label="Site">
-                <button class="button-page">site</button>
-              </a>
-            </nav>
-          </div>
-        </div>
-      </div>
-
-      <a href="https://github.com/hannermoraes?tab=repositories" target="_blank" class="work__button button ">
-        <i class='bx bxl-github'></i>Abrir Github</a>
-
-    </section>
-
-    <!-- education -->
-    <section class="qualification section" id="education">
-      <h2 class="section-title">Qualificações</h2>
-
-      <div class="qualification__container bd-grid">
-        <ul class="qualification__list" id="qualifications">
-
-          <li class="li right qualification_right" id="qualification3">
-            <div class="graduation__school">
-            </div>
-            <div class="graduation-title">
-              <i class='bx bxs-graduation'></i>
-              <div class="graduation-subtitle">
-                <img src="./assets/xpe.png" alt="logo da escola">
-                <h4 class="subtitle">- Desenvolvedor Frontend</h4>
-              </div>
-            </div>
-            <p class="graduation-description">&nbsp;O Bootcamp de Desenvolvedor Frontend da XP Inc. é um programa onde
-              são abordados temas como HTML, CSS, JavaScript, React e Redux, além de
-              conceitos de design e UX/UI.
-              As aulas foram ministradas por profissionais experientes da XP Inc. e da Digital House, uma das principais
-              escolas de tecnologia da América Latina. Além disso, houve projetos práticos, desafios e mentorias para
-              consolidar o aprendizado e preparar os participantes para o mercado de trabalho.
+            <h2 class="about__subtitle">Hanner Moraes</h2>
+            <p class="about__text">
+              Olá, sou Hanner Moraes, desenvolvedor fullstack com mais de 1 ano
+              de experiência. Inicialmente focado no Frontend, aprimorei
+              habilidades em React e Angular através dos cursos que fiz na DIO e
+              XP Educação. Em minha primeira experiência, trabalhei com ASP
+              Classic, C#, Javascript e SQL Server, implementando e fazendo
+              manutenção de códigos em um sistema próprio da empresa. Além de
+              ter focado em JavaScript, explorei tecnologias como TypeScript,
+              PHP e SASS, adicionando outros níveis de camadas aos meus
+              projetos. Estou em busca de novas oportunidades desafiadoras como
+              desenvolvedor fullstack. Convido você a explorar meu portfólio
+              online para conhecer mais sobre mim e os projetos em que estive
+              envolvido.<br /><br />
+              <span class="about__info"
+                >Obrigado por visitar meu portfólio.</span
+              >
             </p>
-            <div class="graduation-date">
+          </div>
+        </div>
+      </section>
 
-              <a href="./assets/certificadoXPE.pdf" class="certification button" target="_blank">Visualizar
-                Certificado</a>
+      <!-- skills -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="skills__container bd-grid">
+          <!-- PHP -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-php skills__icon"></i>
+              <span class="skills__name">PHP</span>
             </div>
-          </li>
 
-          <li class="li left qualification_left" id="qualification2">
-            <div class="graduation-title">
-              <i class='bx bxs-graduation'></i>
-              <div class="graduation-subtitle">
-                <img src="./assets/rocketseat_semlogo.png" alt="logo da escola">
-                <h4 class="subtitle">- Trilha Fundamentar</h4>
+            <div>
+              <span class="skills__percentage">80%</span>
+            </div>
+
+            <div id="skills__bar-php" class="skills__bar hidden"></div>
+          </div>
+
+          <!-- SQL SERVER -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <!-- <i class="bx bxl-bootstrap skills__icon"></i> -->
+              <img
+                src="./assets/sql.png"
+                alt="iconAsp"
+                style="
+                  max-width: 25px;
+                  height: 30px;
+                  margin-left: 2.5px;
+                  margin-right: 20px;
+                "
+              />
+              <span class="skills__name">SQL</span>
+            </div>
+
+            <div>
+              <span class="skills__percentage">85%</span>
+            </div>
+
+            <div id="skills__bar-sql" class="skills__bar hidden"></div>
+          </div>
+
+          <!-- JAVASCRIPT -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-javascript skills__icon"></i>
+              <span class="skills__name">JAVASCRIPT</span>
+            </div>
+
+            <div>
+              <span class="skills__percentage">80%</span>
+            </div>
+
+            <div id="skills__bar-js" class="skills__bar hidden"></div>
+          </div>
+
+          <!-- REACT -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-react skills__icon"></i>
+              <span class="skills__name">REACT</span>
+            </div>
+
+            <div>
+              <span class="skills__percentage">75%</span>
+            </div>
+
+            <div id="skills__bar-react" class="skills__bar hidden"></div>
+          </div>
+
+          <!-- BOOTSTRAP -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-bootstrap skills__icon"></i>
+              <span class="skills__name">BOOTSTRAP</span>
+            </div>
+
+            <div>
+              <span class="skills__percentage">90%</span>
+            </div>
+
+            <div id="skills__bar-bootstrap" class="skills__bar hidden"></div>
+          </div>
+
+          <!-- TYPESCRIPT -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-typescript skills__icon"></i>
+              <span class="skills__name">TYPESCRIPT</span>
+            </div>
+
+            <div>
+              <span class="skills__percentage">75%</span>
+            </div>
+
+            <div id="skills__bar-typescript" class="skills__bar hidden"></div>
+          </div>
+
+          <!-- ANGULAR -->
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-angular skills__icon"></i>
+              <span class="skills__name">ANGULAR</span>
+            </div>
+
+            <div>
+              <span class="skills__percentage">75%</span>
+            </div>
+
+            <div id="skills__bar-angular" class="skills__bar hidden"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section class="work section" id="works">
+        <h2 class="section-title">Projetos</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <img
+              src="./assets/clima.png"
+              alt="app de clima"
+              class="imagem_fundo"
+            />
+            <div class="work__card-description">
+              <h3 class="work__card-title">climaMundo</h3>
+              <nav class="work__card-nav">
+                <a
+                  href="https://github.com/hannermoraes/climaMundo"
+                  target="_blank"
+                  label="Github"
+                >
+                  <button class="button-git">github</button>
+                </a>
+                <a
+                  href="https://hannermoraes.github.io/climaMundo/"
+                  target="_blank"
+                  label="Site"
+                >
+                  <button class="button-page">site</button>
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="work__img">
+            <img src="./assets/todo.png" alt="" class="imagem_fundo" />
+            <div class="work__card-description">
+              <h3 class="work__card-title">toDo List</h3>
+              <nav class="work__card-nav">
+                <a
+                  href="https://github.com/hannermoraes/toDo"
+                  target="_blank"
+                  label="Github"
+                >
+                  <button class="button-git">github</button>
+                </a>
+                <a
+                  href="https://hannermoraes.github.io/toDo/"
+                  target="_blank"
+                  label="Site"
+                >
+                  <button class="button-page">site</button>
+                </a>
+              </nav>
+            </div>
+          </div>
+          <div class="work__img">
+            <img src="./assets/ammarhes.png" alt="" class="imagem_fundo" />
+            <div class="work__card-description">
+              <h3 class="work__card-title">login/cadastro</h3>
+              <nav class="work__card-nav">
+                <a
+                  href="https://github.com/hannermoraes/desafio-ammarhes-final"
+                  target="_blank"
+                  label="Github"
+                >
+                  <button class="button-git">github</button>
+                </a>
+                <a
+                  href="https://hannermoraes.github.io/desafio-ammarhes-final/"
+                  target="_blank"
+                  label="Site"
+                >
+                  <button class="button-page">site</button>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://github.com/hannermoraes?tab=repositories"
+          target="_blank"
+          class="work__button button"
+        >
+          <i class="bx bxl-github"></i>Abrir Github</a
+        >
+      </section>
+
+      <!-- education -->
+      <section class="qualification section" id="education">
+        <h2 class="section-title">Qualificações</h2>
+
+        <div class="qualification__container bd-grid">
+          <ul class="qualification__list" id="qualifications">
+            <li class="li right qualification_right" id="qualification3">
+              <div class="graduation__school"></div>
+              <div class="graduation-title">
+                <i class="bx bxs-graduation"></i>
+                <div class="graduation-subtitle">
+                  <img src="./assets/xpe.png" alt="logo da escola" />
+                  <h4 class="subtitle">- Desenvolvedor Frontend</h4>
+                </div>
               </div>
-            </div>
-            <p class="graduation-description">&nbsp;A trilha "Fundamentar" da Rocketseat é uma série de cursos online
-              que aprofunda conceitos fundamentais de desenvolvimento web. A trilha é composta por diversos módulos que
-              abordam conceitos avançados como arquitetura de software, testes automatizados, banco de dados, segurança,
-              entre outros.
-              Cada módulo é projetado para ajudar os alunos a entender conceitos avançados e aplicar esse conhecimento
-              na prática, através de projetos e desafios. Ao concluir a trilha Fundamentar, você terá adquirido
-              habilidades mais avançadas em programação web. </p>
-            <div class="graduation-date">
-
-              <a href="./assets/discover-fundamentar-certificate.pdf" class="certification button"
-                target="_blank">Visualizar Certificado</a>
-            </div>
-          </li>
-
-          <li class="li right qualification_right" id="qualification1">
-            <div class="graduation__school">
-            </div>
-            <div class="graduation-title">
-              <i class='bx bxs-graduation'></i>
-              <div class="graduation-subtitle">
-                <img src="./assets/logo-full.svg" alt="logo da escola">
-                <h4 class="subtitle">- JavaScript Developer</h4>
+              <p class="graduation-description">
+                &nbsp;O Bootcamp de Desenvolvedor Frontend da XP Inc. é um
+                programa onde são abordados temas como HTML, CSS, JavaScript,
+                React e Redux, além de conceitos de design e UX/UI. As aulas
+                foram ministradas por profissionais experientes da XP Inc. e da
+                Digital House, uma das principais escolas de tecnologia da
+                América Latina. Além disso, houve projetos práticos, desafios e
+                mentorias para consolidar o aprendizado e preparar os
+                participantes para o mercado de trabalho.
+              </p>
+              <div class="graduation-date">
+                <a
+                  href="./assets/certificadoXPE.pdf"
+                  class="certification button"
+                  target="_blank"
+                  >Visualizar Certificado</a
+                >
               </div>
-            </div>
-            <p class="graduation-description">&nbsp;O Bootcamp de Formação JavaScript Developer da DIO é uma formação
-              completa que ensina desde os fundamentos do JavaScript até frameworks populares como React e Node.js. O
-              programa é altamente interativo e envolve muitas atividades práticas, o que permitiu aplicar o que foi
-              aprendido em tempo real. Como resultado, foi possível aprimorar as habilidades em JavaScript e
-              desenvolvimento web, aprendendo desde os fundamentos até o javaScript avançado.</p>
-            <div class="graduation-date">
+            </li>
 
-              <a href="./assets/certificadoDIO.pdf" class="certification button" target="_blank">Visualizar
-                Certificado</a>
-            </div>
-          </li>
+            <li class="li left qualification_left" id="qualification2">
+              <div class="graduation-title">
+                <i class="bx bxs-graduation"></i>
+                <div class="graduation-subtitle">
+                  <img
+                    src="./assets/rocketseat_semlogo.png"
+                    alt="logo da escola"
+                  />
+                  <h4 class="subtitle">- Trilha Fundamentar</h4>
+                </div>
+              </div>
+              <p class="graduation-description">
+                &nbsp;A trilha "Fundamentar" da Rocketseat é uma série de cursos
+                online que aprofunda conceitos fundamentais de desenvolvimento
+                web. A trilha é composta por diversos módulos que abordam
+                conceitos avançados como arquitetura de software, testes
+                automatizados, banco de dados, segurança, entre outros. Cada
+                módulo é projetado para ajudar os alunos a entender conceitos
+                avançados e aplicar esse conhecimento na prática, através de
+                projetos e desafios. Ao concluir a trilha Fundamentar, você terá
+                adquirido habilidades mais avançadas em programação web.
+              </p>
+              <div class="graduation-date">
+                <a
+                  href="./assets/discover-fundamentar-certificate.pdf"
+                  class="certification button"
+                  target="_blank"
+                  >Visualizar Certificado</a
+                >
+              </div>
+            </li>
 
-        </ul>
+            <li class="li right qualification_right" id="qualification1">
+              <div class="graduation__school"></div>
+              <div class="graduation-title">
+                <i class="bx bxs-graduation"></i>
+                <div class="graduation-subtitle">
+                  <img src="./assets/logo-full.svg" alt="logo da escola" />
+                  <h4 class="subtitle">- JavaScript Developer</h4>
+                </div>
+              </div>
+              <p class="graduation-description">
+                &nbsp;O Bootcamp de Formação JavaScript Developer da DIO é uma
+                formação completa que ensina desde os fundamentos do JavaScript
+                até frameworks populares como React e Node.js. O programa é
+                altamente interativo e envolve muitas atividades práticas, o que
+                permitiu aplicar o que foi aprendido em tempo real. Como
+                resultado, foi possível aprimorar as habilidades em JavaScript e
+                desenvolvimento web, aprendendo desde os fundamentos até o
+                javaScript avançado.
+              </p>
+              <div class="graduation-date">
+                <a
+                  href="./assets/certificadoDIO.pdf"
+                  class="certification button"
+                  target="_blank"
+                  >Visualizar Certificado</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="backhome">
+        <a href="#home" class="backhome__btn">
+          <i class="bx bx-chevrons-up"></i>voltar ao topo</a
+        >
       </div>
-    </section>
+    </main>
 
-    <div class="backhome">
-      <a href="#home" class="backhome__btn">
-        <i class='bx bx-chevrons-up'></i>voltar ao topo</a>
+    <footer class="footer">
+      <p class="footer__title"></p>
 
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__title"></p>
-
-    <div class="footer__social">
-      <a href="https://www.linkedin.com/in/hannermoraes/" target="_blank" class="footer__icon"><i
-          class='bx bxl-linkedin'></i></a>
-      <a href="https://www.instagram.com/hannermoraes/" target="_blank" class="footer__icon"><i
-          class='bx bxl-instagram'></i></a>
-      <a href="https://github.com/hannermoraes" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
-    </div>
-    <p>&#169; Copyright © 2023 <br>
-      Hanner Moraes - Todos os direitos reservados.
-
-    </p>
-  </footer>
-</body>
-
+      <div class="footer__social">
+        <a
+          href="https://www.linkedin.com/in/hannermoraes/"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/hannermoraes/"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="https://github.com/hannermoraes"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-github"></i
+        ></a>
+      </div>
+      <p>
+        &#169; Copyright © 2023 <br />
+        Hanner Moraes - Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
 </html>
