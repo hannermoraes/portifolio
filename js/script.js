@@ -1,3 +1,13 @@
+var audio = document.getElementById("myAudio");
+
+// Botão com Audio (teste)
+document.getElementById("myButton").addEventListener("click", function() {
+
+  audio.currentTime = 0;
+  audio.play();
+});
+
+
 // menu show
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
