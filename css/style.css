@@ -386,18 +386,21 @@ a.certification {
 }
 
 #skills__bar-js {
-  max-width: 80%;
+  max-width: 90%;
+}
+#skills__bar-tailwind {
+  max-width: 90%;
 }
 
 #skills__bar-react {
-  max-width: 75%;
+  max-width: 85%;
 }
 
 #skills__bar-typescript {
-  max-width: 75%;
+  max-width: 85%;
 }
 #skills__bar-angular {
-  max-width: 75%;
+  max-width: 85%;
 }
 
 
@@ -420,6 +423,15 @@ a.certification {
     width: 100%;
   }
 }
+
+.svg-icon {
+  max-width: 25px;
+  height: 30px;
+  margin-left: 2.5px;
+  margin-right: 20px;
+  filter: invert(21%) sepia(93%) saturate(3798%) hue-rotate(220deg) brightness(91%) contrast(90%);
+}
+
 
 .skills__img {
   border-radius: .5rem;
