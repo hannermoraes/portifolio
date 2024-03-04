@@ -9,7 +9,7 @@ Bem-vindo ao meu portfólio de desenvolvedor front-end! Aqui você encontrará u
 ## Habilidades Técnicas
 
 - **Linguagens de Programação:** HTML5, CSS3, JavaScript
-- **Frameworks e Bibliotecas:** Bootstrap, React, Vue.js
+- **Frameworks e Bibliotecas:** Bootstrap
 - **Pré-processadores:** Sass
 - **Versionamento de Código:** Git
 - **Conhecimentos Básicos:** UX/UI Design, SEO
